@@ -13,20 +13,17 @@ funcion_5 = pd.read_parquet("Funciones/funcion_5.parquet")
 
 
 @app.get("/PlayTimeGenre/{genero}", name= "Tiempo de juego por genero")
-async def PlayTimeGenre(genero):
-    # Filtramos el DataFrame para obtener solo las filas del género específico
-    funcion_1_filtrado = funcion_1[funcion_1['genres'].str.contains(genero, case=False)]
+async def PlayTimeGenre(genero: str):
+    # Filtrar el DataFrame para obtener solo las filas del género específico
+    funcion_1_filtrado = funcion_1[funcion_1['genres'].str.contains(genero, case=False, na=False)]
 
     if funcion_1_filtrado.empty:
         return "No se encontraron datos para el género especificado."
 
-    # Agrupamos por año y sumamos las horas jugadas
-    resumen = funcion_1_filtrado.groupby('release_date')['playtime_forever'].sum()
+    # Encontrar el año con más horas jugadas
+    año_con_mas_horas = funcion_1_filtrado.groupby('release_date')['playtime_forever'].sum().idxmax()
 
-    # Encontramos el año con la suma máxima de horas jugadas
-    año_con_mas_horas = resumen.idxmax()
-
-    return {"El año con más horas jugadas para el genero": genero, "es:": año_con_mas_horas}
+    return {"Año de lanzamiento con más horas jugadas para Género " + genero: año_con_mas_horas}
 
 
 @app.get("/UserForGenre/{genero}", name= "Usuario con mas horas")
