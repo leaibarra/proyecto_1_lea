@@ -10,12 +10,12 @@ funcion_3_completo = pd.read_parquet("Funciones/funcion_3.parquet")
 funcion_4_completo = pd.read_parquet("Funciones/funcion_4.parquet")
 funcion_5_completo = pd.read_parquet("Funciones/funcion_5.parquet")
 
-# Obtener una muestra del 50% de los datos
-funcion_1 = funcion_1_completo.sample(frac=0.50, random_state=1)
-funcion_2 = funcion_2_completo.sample(frac=0.50, random_state=1)
-funcion_3 = funcion_3_completo.sample(frac=0.50, random_state=1)
-funcion_4 = funcion_4_completo.sample(frac=0.50, random_state=1)
-funcion_5 = funcion_5_completo.sample(frac=0.50, random_state=1)
+# Obtener una muestra del 10% de los datos
+funcion_1 = funcion_1_completo.sample(frac=0.10, random_state=1)
+funcion_2 = funcion_2_completo.sample(frac=0.10, random_state=1)
+funcion_3 = funcion_3_completo.sample(frac=0.10, random_state=1)
+funcion_4 = funcion_4_completo.sample(frac=0.10, random_state=1)
+funcion_5 = funcion_5_completo.sample(frac=0.10, random_state=1)
 
 
 
