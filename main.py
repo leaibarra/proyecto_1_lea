@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import pandas as pd
 
-#Instanciamos la aplicaciones
+#Instanciamos la aplicacion
 app = FastAPI()
 
 funcion_1_main = pd.read_parquet("Funciones/funcion_1_muestra.parquet")
