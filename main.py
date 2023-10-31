@@ -97,20 +97,17 @@ async def UsersNotRecommend(anio:int):
 
 
 @app.get("/sentiment_analysis/{año}", name= "registros de reseñas de usuarios")
-async def sentiment_analysis(anio:int):
-    positivo = 0
-    neutro = 0
-    negativo = 0
-
-    # Filtrar los datos para el año especificado
+async def sentiment_analysis(anio: int):
+    # Filtrar los datos para el año especificado y contar las categorías de sentimiento
     funcion_5_f = funcion_5[funcion_5['release_date'] == anio]
+    sentiment_counts = funcion_5_f['sentiment_analysis'].value_counts().to_dict()
 
-    for index, row in funcion_5_f.iterrows():
-         if row['sentiment_analysis'] == 2:
-            positivo += 1
-         elif row['sentiment_analysis'] == 1:
-            neutro += 1
-         else:
-            negativo += 1
-    return ('Positivos: ', positivo, ' Neutros: ', neutro, ' Negativos: ', negativo)
+    # Crear un diccionario con los resultados
+    results = {
+        'Negative': sentiment_counts.get(0, 0),
+        'Neutral': sentiment_counts.get(1, 0),
+        'Positive': sentiment_counts.get(2, 0)
+    }
+
+    return results
 
