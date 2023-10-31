@@ -28,7 +28,7 @@ async def PlayTimeGenre(genero):
 
     return {"El año con más horas jugadas para el genero": genero, "es:": año_con_mas_horas}
 
-
+'''
 @app.get("/UserForGenre/{genero}", name= "Usuario con mas horas")
 async def UserForGenre(genero):
     # Filtramos los datos por el género proporcionado
@@ -113,4 +113,4 @@ async def sentiment_analysis(anio:int):
          else:
             negativo += 1
     return ('Positivos: ', positivo, ' Neutros: ', neutro, ' Negativos: ', negativo)
-
+'''
