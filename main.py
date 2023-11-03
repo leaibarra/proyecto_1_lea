@@ -109,7 +109,7 @@ async def sentiment_analysis(anio: int):
     return results
 
 
-@app.get("/sentiment_analysis/{año}", name= "registros de reseñas de usuarios")
+@app.get("/recomendacion_juego/{id}", name= "sistema de recomendacion")
 async def recomendacion_juego(id_ingresado):
     # Verificar si el 'id_ingresado' está en la columna 'id'
     if id_ingresado in sin_usuario['id'].values:
