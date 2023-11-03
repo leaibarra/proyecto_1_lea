@@ -8,11 +8,15 @@ Hola! Este es mi primer proyecto individual en la carrera *Data Science* en Henr
 Espero que lo disfruten!!!😁
 
 ## INDICE DE ARCHIVOS:
-* **Dataframes**: Esta carpeta contiene los datos originales que nos brindo la empresa.
+* **Datasets**: Esta carpeta contiene los datos originales que nos brindo la empresa y los datasets descomprimidos.
+* **Data frames limpios**: Aqui encontraran dataframes que ya tienen un proceso de limpieza.
 * **Funciones**: En esta carpeta se encuentran los *Data Frames* de las funciones que brindamos.
 * **main.py**: En este archivo se encuentra el contenido que se utiliza para *renderizar*.
 * **requirments.txt**: En este archivo estan las *librerias* utilizadas en el main.py.
-* ****
+* **EDA_ETL**: Este archivo es donde se lleva acabo la primero carga de los Datasets y los preparamos paara realizar las funciones que se encuentran aqui mismo
+* **EDA_recomendacion**: Por este lado podran ver carga de archivos muchos mas limpios y una limpieza aun mayor para la realizacion de la funcion del sistema de recomendacion de juegos.
+
+> (Al final del readme podran encontrar los links)
 
 
 
@@ -75,3 +79,6 @@ Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargam
 ## TERCER PASO:
 
 Luego llegamos al tan ansiado sistema de recomendacion. En el archivo *"EDA_recomendacion"* podran encontrarse con la carga de la data con los datos que nos sirven para llevarlo a cabo. hacemos una limpieza mucho mas profunda y hacemos la función que nos solicito la empresa.
+
+* **link video:**
+* **link FastAPI:**
