@@ -1,14 +1,14 @@
 # PROYECTO INDIVIDUAL 1
-# DATA SCIENCE PT-04
-# Leandro Ibarra
+## DATA SCIENCE PT-04
+### Leandro Ibarra
 
-Hola! Este es mi primer proyecto individual en la carrera Data Science en Henry.
+Hola! Este es mi primer proyecto individual en la carrera *Data Science* en Henry.
 Espero que lo disfruten!!!😁
 
 
 
 
-Para este proyecto nos solicitaron situarnos en un rol de MLOps Engineer.
+Para este proyecto nos solicitaron situarnos en un rol de *MLOps Engineer*.
 
 Hipoteticamente arrancamos a trabajar como Data Scientist en Steam, una plataforma multinacional de videojuegos. Y nos solicitan crear un sistema de recomendación de juegos.
 La empresa nos proporciono datos que su maduración es nula, en ella nos encontramos con: Datos anidados, de tipo raw, no hay procesos automatizados para la actualización de nuevos productos, entre otras cosas…
