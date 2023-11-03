@@ -5,6 +5,13 @@
 Hola! Este es mi primer proyecto individual en la carrera *Data Science* en Henry.
 Espero que lo disfruten!!!😁
 
+## INDICE DE ARCHIVOS:
+* **Funciones**: En esta carpeta se encuentran los *Data Frames* de las funciones que brindamos
+* **main.py**: En este archivo se encuentra el contenido que se utiliza para *renderizar*
+* **requirments.txt**: En este archivo estan las *librerias* utilizadas en el main.py
+* ****
+
+
 
 
 
