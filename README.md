@@ -61,4 +61,13 @@ Nuestro jefe nos pide que el modelo derive obligatoriamente en un GET/POST en la
 > * def recomendacion_juego( id de producto ): Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 
 
+## PRIMER PASO:
 
+ Para comenzar arrancamos con un proceso de carga de la data y procedemos a realizar un proceso de EDA y ETL. Ahi podremos observar con los datos que contamos y realizar las tranformaciones necesarias para cumplir con los objetivos deseados de la empresa.
+ Despues de lograr la transformacion procedemos a hacer las funciones que propusimos.
+ Este proceso lo podran encontrar en el archivo *"proyecto_1"*
+
+
+## SEGUNDO PASO:
+
+Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargamos las librerias utilizadas en el archivo *"requirments.txt"*. Estos archivos 
