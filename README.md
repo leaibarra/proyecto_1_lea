@@ -78,5 +78,7 @@ Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargam
 
 Luego llegamos al tan ansiado sistema de recomendacion. En el archivo *"EDA_recomendacion"* podran encontrarse con la carga de la data con los datos que nos sirven para llevarlo a cabo. hacemos una limpieza mucho mas profunda y hacemos la función que nos solicito la empresa.
 
-* **link video:**
+* **link video:** https://drive.google.com/drive/folders/1yCpKnjpfF8Y7PSfXeoWA-3OdSVYnQBpc?hl=es
 * **link FastAPI:** https://proyecto-1-lea.onrender.com/docs#/
+* **link Datasets originales** https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
+* **link LinkedIn** https://www.linkedin.com/in/leandro-ibarra-691030270/
