@@ -1,4 +1,4 @@
-# PROYECTO INDIVIDUAL1
+# PROYECTO INDIVIDUAL 1🚀
 
 
 ## DATA SCIENCE PT-04
@@ -65,18 +65,18 @@ Nuestro jefe nos pide que el modelo derive obligatoriamente en un GET/POST en la
 > * def recomendacion_juego( id de producto ): Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 
 
-## PRIMER PASO:
+## 1️⃣PRIMER PASO:
 
  Para comenzar arrancamos con un proceso de carga de la data y procedemos a realizar un proceso de EDA y ETL. Ahi podremos observar con los datos que contamos y realizar las tranformaciones necesarias para cumplir con los objetivos deseados de la empresa.
  Despues de lograr la transformacion procedemos a hacer las funciones que propusimos.
  Este proceso lo podran encontrar en el archivo *"proyecto_1"*
 
 
-## SEGUNDO PASO:
+## 2️⃣SEGUNDO PASO:
 
 Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargamos las librerias utilizadas en el archivo *"requirments.txt"*. Estos archivos son requisitos indispensables para poder rendedrizar correctamente.
 
-## TERCER PASO:
+## 3️⃣TERCER PASO:
 
 Luego llegamos al tan ansiado sistema de recomendacion. En el archivo *"EDA_recomendacion"* podran encontrarse con la carga de la data con los datos que nos sirven para llevarlo a cabo. hacemos una limpieza mucho mas profunda y hacemos la función que nos solicito la empresa.
 
