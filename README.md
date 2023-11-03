@@ -70,4 +70,8 @@ Nuestro jefe nos pide que el modelo derive obligatoriamente en un GET/POST en la
 
 ## SEGUNDO PASO:
 
-Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargamos las librerias utilizadas en el archivo *"requirments.txt"*. Estos archivos 
+Una vez realizadas las funciones las cargamos en el archivo *"main.py"* y cargamos las librerias utilizadas en el archivo *"requirments.txt"*. Estos archivos son requisitos indispensables para poder rendedrizar correctamente.
+
+## TERCER PASO:
+
+Luego llegamos al tan ansiado sistema de recomendacion. En el archivo *"EDA_recomendacion"* podran encontrarse con la carga de la data con los datos que nos sirven para llevarlo a cabo. hacemos una limpieza mucho mas profunda y hacemos la función que nos solicito la empresa.
