@@ -9,6 +9,7 @@ funcion_2_main = pd.read_parquet("Funciones/funcion_2_muestra.parquet")
 funcion_3_main = pd.read_parquet("Funciones/funcion_3_muestra.parquet")
 funcion_4_main = pd.read_parquet("Funciones/funcion_4_muestra.parquet")
 funcion_5_main = pd.read_parquet("Funciones/funcion_5_muestra.parquet")
+sin_usuario = pd.read_parquet("Funciones/sin_usuario.parquet")
 
 
 @app.get("/PlayTimeGenre/{genero}", name= "Tiempo de juego por genero")
@@ -106,6 +107,45 @@ async def sentiment_analysis(anio: int):
     }
 
     return results
+
+
+@app.get("/sentiment_analysis/{año}", name= "registros de reseñas de usuarios")
+async def recomendacion_juego(id_ingresado):
+    # Verificar si el 'id_ingresado' está en la columna 'id'
+    if id_ingresado in sin_usuario['id'].values:
+        # Filtrar por 'id'
+        df_filtrado = sin_usuario[sin_usuario['id'] == id_ingresado]
+
+        # Filtrar por 'genres'
+        if not df_filtrado.empty:
+            genre = df_filtrado.iloc[0]['genres']
+            df_filtrado = sin_usuario[sin_usuario['genres'] == genre]
+
+            # Filtrar por 'specs'
+            if not df_filtrado.empty:
+                df_filtrado = df_filtrado[df_filtrado['specs'] == df_filtrado.iloc[0]['specs']]
+
+                # Filtrar por 'developer'
+                if not df_filtrado.empty:
+                    df_filtrado = df_filtrado[df_filtrado['developer'] == df_filtrado.iloc[0]['developer']]
+
+                    # Filtrar por 'funny_number'
+                    if not df_filtrado.empty:
+                        df_filtrado = df_filtrado.sort_values(by='funny_number', ascending=False)
+
+                        # Devolver los nombres de los juegos recomendados
+                        if not df_filtrado.empty:
+                            nombres_recomendados = df_filtrado['app_name'].iloc[:5].tolist()
+                            return nombres_recomendados
+            else:
+                return "No se encontraron juegos con los mismos criterios."
+        else:
+            return "No se encontraron juegos con el género ingresado."
+    else:
+        return "No se encontraron juegos con el ID ingresado."
+
+
+
 
 
 
