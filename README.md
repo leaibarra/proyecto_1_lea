@@ -67,7 +67,7 @@ Nuestro jefe nos pide que el modelo derive obligatoriamente en un GET/POST en la
 
  Para comenzar arrancamos con un proceso de carga de la data y procedemos a realizar un proceso de EDA y ETL. Ahi podremos observar con los datos que contamos y realizar las tranformaciones necesarias para cumplir con los objetivos deseados de la empresa.
  Despues de lograr la transformacion procedemos a hacer las funciones que propusimos.
- Este proceso lo podran encontrar en el archivo *"proyecto_1"*
+ Este proceso lo podran encontrar en el archivo *"EDA_ETL"*
 
 
 ## 2️⃣SEGUNDO PASO:
