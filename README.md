@@ -1,4 +1,6 @@
-# PROYECTO INDIVIDUAL 1
+<h1 align="center"> PROYECTO INDIVIDUAL 1 </h1>
+
+
 ## DATA SCIENCE PT-04
 ### Leandro Ibarra
 
@@ -17,6 +19,8 @@ Espero que lo disfruten!!!😁
 
 
 Para este proyecto nos solicitaron situarnos en un rol de *MLOps Engineer*.
+
+<h1 align="center"> ![image](https://github.com/leaibarra/proyecto_1_lea/assets/126922100/0064fa02-85cc-4337-9668-7c1984eba1f3) </h1>
 
    ![image](https://github.com/leaibarra/proyecto_1_lea/assets/126922100/0064fa02-85cc-4337-9668-7c1984eba1f3)
 
